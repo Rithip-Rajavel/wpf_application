@@ -20,4 +20,16 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
+    private void Button_Click(Object sender, RoutedEventArgs e)
+    {
+        string text = null;
+        // try
+        // {
+        //     text.Trim();
+        // }
+        // catch(Exception ex){
+        //     MessageBox.Show("A handled exception just occurred "+ ex.Message, "Exception", MessageBoxButton.OK, MessageBoxImage.Warning);
+        // }
+        // text.Trim();
+    }
 }
