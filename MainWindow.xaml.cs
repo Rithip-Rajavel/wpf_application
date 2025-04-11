@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Globalization;  
+using System.Threading;
 
 namespace Wpf_application;
 
@@ -31,5 +33,11 @@ public partial class MainWindow : Window
         //     MessageBox.Show("A handled exception just occurred "+ ex.Message, "Exception", MessageBoxButton.OK, MessageBoxImage.Warning);
         // }
         // text.Trim();
+    }
+    private void CultureInfoSwitchButton_Click(object sender, RoutedEventArgs e){
+        Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo((sender as Button).Tag.ToString());
+        lblNumber.Content = (123456789.42d).ToString("N2");
+        lblDate.Content = DateTime.Now.ToString();
+
     }
 }

@@ -1,10 +1,10 @@
 ﻿<Application x:Class="Wpf_application.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Wpf_application"
-             DispatcherUnhandledException="Application_DispatcherUnhandledException"
-             StartupUri="MainWindow.xaml">
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             Startup="ApplicationStartup"
+             DispatcherUnhandledException="Application_DispatcherUnhandledException">
     <Application.Resources>
-         
+        <sys:String x:Key="MainWindowTitle">ApplicationCultureSwitchSample</sys:String>
     </Application.Resources>
 </Application>

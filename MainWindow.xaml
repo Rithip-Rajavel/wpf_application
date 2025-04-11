@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_application"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Click Me" Width="100" Height="30" Click="Button_Click" />
-    </Grid>
+        Title="{StaticResource MainWindowTitle}" Height="450" Width="800">
+    <StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+             <Label Content="Number:" />
+            <Label Name="lblNumber" Grid.Column="1" />
+            <Label Content="Date:" Grid.Row="1" />
+            <Label Name="lblDate" Grid.Row="1" Grid.Column="1" />
+        </Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+            <Button Tag= "en-US" Click="CultureInfoSwitchButton_Click" HorizontalAlignment="Stretch"> English </Button>
+            <Button Tag= "fr-FR" Click="CultureInfoSwitchButton_Click" HorizontalAlignment="Stretch"> Français </Button>
+            <Button Tag= "es-ES" Click="CultureInfoSwitchButton_Click" HorizontalAlignment="Stretch"> Español </Button>
+        </StackPanel>
+    </StackPanel>
 </Window>
