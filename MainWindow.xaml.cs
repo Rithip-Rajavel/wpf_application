@@ -34,10 +34,10 @@ public partial class MainWindow : Window
         // }
         // text.Trim();
     }
-    private void CultureInfoSwitchButton_Click(object sender, RoutedEventArgs e){
-        Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo((sender as Button).Tag.ToString());
-        lblNumber.Content = (123456789.42d).ToString("N2");
-        lblDate.Content = DateTime.Now.ToString();
+    // private void CultureInfoSwitchButton_Click(object sender, RoutedEventArgs e){
+    //     Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo((sender as Button).Tag.ToString());
+    //     lblNumber.Content = (123456789.42d).ToString("N2");
+    //     lblDate.Content = DateTime.Now.ToString();
 
-    }
+    // }
 }
