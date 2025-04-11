@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Wpf_application"
         mc:Ignorable="d"
         Title="{StaticResource MainWindowTitle}" Height="450" Width="800">
-    <!-- <StackPanel>
+    <StackPanel>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -26,7 +26,5 @@
             <Button Tag= "fr-FR" Click="CultureInfoSwitchButton_Click" HorizontalAlignment="Stretch"> Français </Button>
             <Button Tag= "es-ES" Click="CultureInfoSwitchButton_Click" HorizontalAlignment="Stretch"> Español </Button>
         </StackPanel>
-    </StackPanel>-->
-
-    
+    </StackPanel>
 </Window>

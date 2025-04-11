@@ -5,6 +5,6 @@
              Startup="ApplicationStartup"
              DispatcherUnhandledException="Application_DispatcherUnhandledException">
     <Application.Resources>
-        <sys:String x:Key="MainWindowTitle">ZTextblock Control</sys:String>
+        <sys:String x:Key="MainWindowTitle">ApplicationCultureSwitchSample</sys:String>
     </Application.Resources>
 </Application>
